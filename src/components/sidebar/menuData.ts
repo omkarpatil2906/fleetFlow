@@ -24,13 +24,13 @@ export const menuData = [
       {
         id: "all-orders",
         label: "All Orders",
-        path: "/dashboard/orders",
+        path: "/orders",
         icon: FileText,
       },
       {
         id: "billing-orders",
         label: "Order Billing",
-        path: "/dashboard/orders/billing",
+        path: "/orders/billing",
         icon: IndianRupee,
       },
     ],
@@ -38,19 +38,19 @@ export const menuData = [
   {
     id: "vehicles",
     label: "Vehicles",
-    path: "/dashboard/vehicles",
+    path: "/vehicles",
     icon: Truck,
   },
   {
     id: "drivers",
     label: "Drivers",
-    path: "/dashboard/drivers",
+    path: "/drivers",
     icon: Users,
   },
   {
     id: "billing",
     label: "Billing",
-    path: "/dashboard/billing",
+    path: "/billing",
     icon: CreditCard,
   },
   {
@@ -61,13 +61,13 @@ export const menuData = [
       {
         id: "daily",
         label: "Daily Report",
-        path: "/dashboard/reports/daily",
+        path: "/reports/daily",
         icon: FileText,
       },
       {
         id: "revenue",
         label: "Revenue Report",
-        path: "/dashboard/reports/revenue",
+        path: "/reports/revenue",
         icon: IndianRupee,
       },
     ],
