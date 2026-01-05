@@ -1,8 +1,5 @@
-"use client";
-
-import { Provider } from "react-redux";
-import { store } from "../store/store";
 import "./globals.css";
+import Drawer from "@/components/sidebar/Drawer";
 
 export default function RootLayout({
   children,
@@ -12,7 +9,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Provider store={store}>{children}</Provider>
+        <div className="flex">
+          <Drawer />
+          <main className="flex-1 p-6 bg-gray-50 min-h-screen">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
