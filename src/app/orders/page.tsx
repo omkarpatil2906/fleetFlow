@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import OrderForm from "../../../components/forms/OrderForm";
-import Modal from "../../../components/modals/Modal";
+import OrderForm from "../../components/forms/OrderForm";
+import Modal from "../../components/modals/Modal";
 
 export default function OrdersPage() {
   const [open, setOpen] = useState(false);

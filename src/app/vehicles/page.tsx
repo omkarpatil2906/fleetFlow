@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import VehicleForm from "../../../components/forms/VehicleForm";
-import Modal from "../../../components/modals/Modal";
+import VehicleForm from "../../components/forms/VehicleForm";
+import Modal from "../../components/modals/Modal";
 
 export default function VehiclesPage() {
   const [open, setOpen] = useState(false);
