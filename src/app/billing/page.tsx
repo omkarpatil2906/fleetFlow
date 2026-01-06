@@ -8,9 +8,9 @@ export default function BillingPage() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="p-6">
-      <div className="flex justify-between mb-4">
-        <h1 className="text-2xl font-bold">Billing</h1>
+    <div className="p-6 space-y-6">
+        <h1 className="text-2xl font-bold text-center">Billing</h1>
+      <div className="flex justify-end mb-4">
         <button
           onClick={() => setOpen(true)}
           className="bg-purple-600 text-white px-4 py-2 rounded"
@@ -19,9 +19,7 @@ export default function BillingPage() {
         </button>
       </div>
 
-      <div className="border rounded p-4 text-gray-500">
-        Invoice list will be here
-      </div>
+      
 
       <Modal
         isOpen={open}
