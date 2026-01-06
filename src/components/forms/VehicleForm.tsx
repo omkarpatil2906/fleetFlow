@@ -9,9 +9,12 @@ export default function VehicleForm() {
       <TextInput label="Capacity (kg)" name="capacity" type="number" />
       <TextInput label="Vehicle Type" name="type" />
 
-      <button className="bg-green-600 text-white px-4 py-2 rounded-md">
-        Save Vehicle
-      </button>
+      <div className="flex justify-end">
+
+        <button className="bg-green-600 text-white px-4 py-2 rounded-md">
+          Save Vehicle
+        </button>
+      </div>
     </form>
   );
 }
