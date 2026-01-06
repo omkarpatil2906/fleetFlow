@@ -9,8 +9,8 @@ export default function VehiclesPage() {
 
   return (
     <div className="p-6">
-      <div className="flex justify-between mb-4">
-        <h1 className="text-2xl font-bold">Vehicles</h1>
+        <h1 className="text-2xl font-bold text-center">Vehicles</h1>
+      <div className="flex justify-end mb-4">
         <button
           onClick={() => setOpen(true)}
           className="bg-green-600 text-white px-4 py-2 rounded"
@@ -19,9 +19,7 @@ export default function VehiclesPage() {
         </button>
       </div>
 
-      <div className="border rounded p-4 text-gray-500">
-        Vehicle list will be here
-      </div>
+      
 
       <Modal
         isOpen={open}
