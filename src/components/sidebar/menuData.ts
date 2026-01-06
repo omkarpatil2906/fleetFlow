@@ -13,7 +13,7 @@ export const menuData = [
   {
     id: "dashboard",
     label: "Dashboard",
-    path: "/",
+    path: "/dashboard",
     icon: LayoutDashboard,
   },
   {
