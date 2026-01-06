@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import BillingForm from "../../../components/forms/BillingForm";
-import Modal from "../../../components/modals/Modal";
+import BillingForm from "../../components/forms/BillingForm";
+import Modal from "../../components/modals/Modal";
 
 export default function BillingPage() {
   const [open, setOpen] = useState(false);
