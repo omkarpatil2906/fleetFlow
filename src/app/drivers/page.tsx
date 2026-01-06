@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import DriverForm from "../../../components/forms/DriverForm";
-import Modal from "../../../components/modals/Modal";
+import DriverForm from "../../components/forms/DriverForm";
+import Modal from "../../components/modals/Modal";
 
 export default function DriversPage() {
   const [open, setOpen] = useState(false);
