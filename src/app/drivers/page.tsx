@@ -10,8 +10,8 @@ export default function DriversPage() {
   return (
     <div className="p-6">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Drivers</h1>
+        <h1 className="text-2xl font-bold text-center">Drivers</h1>
+      <div className="flex justify-end items-center mb-4">
         <button
           onClick={() => setOpen(true)}
           className="bg-blue-600 text-white px-4 py-2 rounded-md"
@@ -20,10 +20,8 @@ export default function DriversPage() {
         </button>
       </div>
 
-      {/* Driver List Placeholder */}
-      <div className="border rounded-md p-4 text-gray-500">
-        Driver list will come here...
-      </div>
+     
+     
 
       {/* Modal */}
       <Modal
