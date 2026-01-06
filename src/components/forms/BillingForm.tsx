@@ -8,9 +8,11 @@ export default function BillingForm() {
       <TextInput label="Invoice Amount" name="amount" type="number" />
       <TextInput label="Due Date" name="dueDate" type="date" />
 
-      <button className="bg-purple-600 text-white px-4 py-2 rounded-md">
-        Generate Invoice
-      </button>
+      <div className="flex justify-end">
+        <button className="bg-purple-600  text-white  px-4 py-2 rounded-md">
+          Generate Invoice
+        </button>
+      </div>
     </form>
   );
 }
