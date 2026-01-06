@@ -21,7 +21,7 @@ export default function Modal({
         {/* Header */}
         <div className="flex justify-between items-center px-4 py-3 border-b">
           <h2 className="text-lg font-semibold">{title}</h2>
-          <button onClick={onClose} className="text-xl">×</button>
+          <button onClick={onClose} className="text-xl cursor-pointer">×</button>
         </div>
 
         {/* Body */}
