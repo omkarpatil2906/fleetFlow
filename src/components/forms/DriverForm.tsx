@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import InputField from "./common/InputField";
-import SelectInput from "./common/SelectInput";
+import DropdownField from "./common/DropdownField";
 
 type DriverFormValues = {
   name: string;
@@ -46,10 +46,13 @@ export default function DriverForm() {
         isMandatory
       />
 
-      <SelectInput
-        label="Availability"
+      <DropdownField
+        placeholder="Availability"
         name="available"
-        options={[
+        control={control}
+        error={errors.available}
+        isMandatory
+        dataArray={[
           { label: "Available", value: "true" },
           { label: "Unavailable", value: "false" },
         ]}

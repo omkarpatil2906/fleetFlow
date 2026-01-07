@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import InputField from "./common/InputField";
-import SelectInput from "./common/SelectInput";
+import DropdownField from "./common/DropdownField";
 
 type OrderFormValues = {
   pickup: string;
@@ -47,10 +47,13 @@ export default function OrderForm() {
         isMandatory
       />
 
-      <SelectInput
-        label="Order Status"
+      <DropdownField
+        placeholder="Order Status"
         name="status"
-        options={[
+        control={control}
+        error={errors.status}
+        isMandatory
+        dataArray={[
           { label: "Pending", value: "PENDING" },
           { label: "In Transit", value: "IN_TRANSIT" },
           { label: "Delivered", value: "DELIVERED" },
