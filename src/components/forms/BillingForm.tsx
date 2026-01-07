@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import InputField from "./common/InputFiled";
+import InputField from "./common/InputField";
 
 type BillingFormValues = {
   amount: number;
