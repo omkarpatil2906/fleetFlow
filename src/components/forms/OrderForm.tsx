@@ -1,21 +1,50 @@
 "use client";
 
-import TextInput from "./common/TextInput";
+import { useForm } from "react-hook-form";
+import InputField from "./common/InputField";
 import SelectInput from "./common/SelectInput";
 
+type OrderFormValues = {
+  pickup: string;
+  delivery: string;
+  status: "PENDING" | "IN_TRANSIT" | "DELIVERED";
+};
+
 export default function OrderForm() {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<OrderFormValues>({
+    defaultValues: {
+      pickup: "",
+      delivery: "",
+      status: "PENDING",
+    },
+  });
+
+  const onSubmit = (data: OrderFormValues) => {
+    console.log("Order Data:", data);
+  };
+
   return (
-    <form className="space-y-4">
-      <TextInput
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <InputField
         label="Pickup Location"
         name="pickup"
         placeholder="Enter pickup location"
+        control={control}
+        error={errors.pickup}
+        isMandatory
       />
 
-      <TextInput
+      <InputField
         label="Delivery Location"
         name="delivery"
         placeholder="Enter delivery location"
+        control={control}
+        error={errors.delivery}
+        isMandatory
       />
 
       <SelectInput
@@ -28,12 +57,14 @@ export default function OrderForm() {
         ]}
       />
 
-      <button
-        type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded-md"
-      >
-        Save Order
-      </button>
+      <div className="flex justify-end">
+        <button
+          type="submit"
+          className="bg-blue-600 text-white px-4 py-2 rounded-md"
+        >
+          Save Order
+        </button>
+      </div>
     </form>
   );
 }
